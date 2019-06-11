@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     //MARK: PROPERTIES
     @IBOutlet weak var mealNameLabel: UILabel!
     @IBOutlet weak var mealTextField: UITextField!
+    @IBOutlet weak var photoImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,31 @@ class ViewController: UIViewController, UITextFieldDelegate {
         mealNameLabel.text = mealTextField.text
     }
     
+    //MARK: UIImagePickerControllerDelegate
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as?
+            UIImage else {
+                fatalError("Expected a dictionary containing an image, but was provided: \(info)")
+        }
+        
+        photoImageView.image = selectedImage
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
     //MARK: ACTIONS
+    @IBAction func selectImageFromPhotoGallery(_ sender: UITapGestureRecognizer) {
+        mealTextField.resignFirstResponder()
+        
+        let imagePickerController = UIImagePickerController()
+        
+        imagePickerController.sourceType = .photoLibrary
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true, completion: nil)
+    }
     @IBAction func setDefaultLabelText(_ sender: Any) {
         mealTextField.text = "TASTY MEAL"
     }
