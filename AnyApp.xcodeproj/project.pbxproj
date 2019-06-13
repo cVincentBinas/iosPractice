@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1712E8C822B0F97C0024394A /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1712E8C722B0F97C0024394A /* RatingControl.swift */; };
+		1712E8CA22B2416C0024394A /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1712E8C922B2416C0024394A /* Meal.swift */; };
 		1716C99D22AF9F320066DF39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716C99C22AF9F320066DF39 /* AppDelegate.swift */; };
 		1716C99F22AF9F320066DF39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716C99E22AF9F320066DF39 /* ViewController.swift */; };
 		1716C9A222AF9F320066DF39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1716C9A022AF9F320066DF39 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		1712E8C722B0F97C0024394A /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		1712E8C922B2416C0024394A /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		1716C99922AF9F320066DF39 /* AnyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1716C99C22AF9F320066DF39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1716C99E22AF9F320066DF39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				1716C99C22AF9F320066DF39 /* AppDelegate.swift */,
 				1716C99E22AF9F320066DF39 /* ViewController.swift */,
 				1712E8C722B0F97C0024394A /* RatingControl.swift */,
+				1712E8C922B2416C0024394A /* Meal.swift */,
 				1716C9A022AF9F320066DF39 /* Main.storyboard */,
 				1716C9A322AF9F340066DF39 /* Assets.xcassets */,
 				1716C9A522AF9F340066DF39 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1712E8CA22B2416C0024394A /* Meal.swift in Sources */,
 				1716C99F22AF9F320066DF39 /* ViewController.swift in Sources */,
 				1712E8C822B0F97C0024394A /* RatingControl.swift in Sources */,
 				1716C99D22AF9F320066DF39 /* AppDelegate.swift in Sources */,
